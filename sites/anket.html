@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style > </style>
+    <title>Tatil planla</title>
+</head>
+<body >
+    
+    <form>
+        <fieldset>
+            <legend>SORU - 1</legend>
+            <tr>
+                <td>Tatilinizi nerede yapmak istiyorsunuz?</td>
+                <td>
+                               <select let="ulke" name="" style="width:100%">
+                                   <option value="">Seçiniz</option>
+                                   <option value="1">Amerika</option>
+                                   <option value="2">Almanya</option>
+                                   <option value="3">Fransa</option>
+                                   <option value="4">İngiltere</option>
+                                   <option value="5">Yunanistan</option>
+                               </select>               
+                           </td>
+                </tr> 
+            </fieldset> 
+                <fieldset let="tur">
+            <legend>SORU - 2</legend>
+            <p>Ne tür bir tatil yapmak istiyorsunuz?</p>
+            
+            <input type="radio" name="anket-1" value="6"/> Eğlenceli bir tatil<br>
+            <input type="radio" name="anket-1" value="7"/> Kültürel odaklı bir tatil<br>
+            <input type="radio" name="anket-1" value="8"/> Sahil ve Su tatili<br>
+            <input type="radio" name="anket-1" value="9"/> Doğa ve tabiatı tanımaya yönelik tatil<br>
+        </fieldset> 
+        <br /> 
+        <fieldset>
+            <legend>SORU - 3</legend>
+            <tr>
+                <td>Kaç günlük bir tatil planlıyorsunuz?</td>
+                <td>
+                               <select let="sure" name="" style="width:100%">
+                                   <option value="">Seçiniz</option>
+                                   <option value="11">3 günlük</option>
+                                   <option value="12">1 haftalık</option>
+                                   <option value="13">10 günlük</option>
+                                  
+                               </select>               
+                           </td>
+                </tr> 
+            </fieldset> 
+        <fieldset  let="ulasim">
+            <legend>SORU- 4</legend>
+            <p>Şehir iiçinde ulaşımı nasıl sağlayacaksınız?</p>
+           
+            <input type="checkbox" value="14"> Toplu taşıma <br />
+            <input type="checkbox" value="15"> Özel araç <br />
+           
+        </fieldset>
+    </form>
+    <input type="button" value="Tatilimi planla" >

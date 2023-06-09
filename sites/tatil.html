@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bana Uygun Tatil</title>
+   
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .ulke{
+        margin-left: auto;
+        width: 200px;
+        height: 200px;
+        font-size: 30px;
+        }
+        html{
+            font-size:62.5%;/*1rem = 10px*/
+        }
+ 
+        body,h1,h2,ul{
+            margin:0;
+            padding:0;
+            
+        }
+        ul{
+            list-style: none;
+        }
+ 
+        /*******************/
+        body{
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .arkaplan{
+            background-color: #289f52;
+        }
+        .kapsayici{
+            width: 960px;
+            margin:0 auto;
+        }
+        
+        .ust{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 200px;
+        }
+ 
+        .ust .logo{
+            text-align: center;
+            color:#fff;
+        }
+        .ust .logo h1{
+            font-size:4rem;
+            letter-spacing: .5rem;
+        }
+ 
+        .ust .logo h1::first-letter{
+            color:rgb(39, 44, 186);
+        }
+ 
+        .ust .logo h1:hover::first-letter{
+            background-color: rgb(39, 44, 186);
+            color:#25373D;
+        }
+ 
+        .ust .logo h2{
+            font-size:2.4rem;
+        }
+ 
+        
+ 
+        
+ 
+        .ust .menu ul{
+            display: flex;
+        }
+        .ust .menu ul li{
+            margin:0 1rem;
+        }
+ 
+        .ust .menu ul a{
+            color:#fff;
+            text-decoration: none;
+            font-size:1.8rem;
+            padding:0 2rem;
+        }
+        .ust .menu ul a:hover{
+            color:rgb(39, 44, 186);
+        }
+ 
+        .orta .bolum1{
+            margin: right 20px;;
+            border:10px solid #474535;
+            padding:20px;
+        }
+ 
+        .orta .bolum1 img{
+           
+            display: block;
+            width: 100%;
+        }
+ 
+        .orta .bolum2{
+            margin-top:20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .orta .bolum2 .kutu{
+            flex-basis: 290px;
+        }
+ 
+        .orta .bolum2 .kutu h2{
+            font-size: 2rem;
+        }
+ 
+        .orta .bolum2 .kutu p{
+            font-size: 1.6rem;
+        }
+ 
+        .orta .bolum3{
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+        }
+ 
+        .orta .bolum3 h1{
+            font-size:2.5rem;
+        }
+ 
+        .orta .bolum3 p{
+            font-size:1.6rem;
+        }
+ 
+        .alt{
+            margin-top:20px;
+            padding:20px 0;
+            display: flex;
+            gap:20px;
+        }
+        .alt .baglanti{
+            flex-grow: 1;
+        }
+ 
+        .alt .baglanti ul li{
+            border-bottom:dotted 1px rgb(39, 44, 186);
+            margin:5px 0;
+        }
+ 
+        .alt .baglanti a{
+            font-size:1.6rem;
+            text-decoration: none;
+            color:rgb(39, 44, 186);
+        }
+ 
+ 
+        .cizgi{
+            border-top:dotted 1px rgb(39, 44, 186);
+            margin:20px 0;
+        }
+ 
+        .alt-kenar-10{
+            border-bottom:10px solid rgb(39, 44, 186);
+        }
+        .ikinci li:not(:last-child)::after {
+  content: " | ";
+  font-size: xx-large;
+  color: #575757;    }
+  #navbar{
+    color: #fbfbfb;
+    padding: 8px;
+    text-align: center;
+    border: 3px solid hsla(177, 93%, 39%, 0.756);
+    text-align: center;
+    /* Gölgelik eklemek için */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: #cd70d4c6;
+}
+
+.ikinci{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+   
+}
+.ikinci a:hover {
+  background-color: #58585844;
+  color: rgb(142, 51, 52);
+}
+
+.ikinci ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ikinci li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.ikinci li:not(:last-child)::after {
+  content: " | ";
+  font-size: xx-large;
+  color: #575757;
+}
+.ikinci a {
+    color: #07b4f3c6;
+    text-decoration: none;
+    font-size:xx-large;
+}
+        
+           
+        
+    </style>
+</head>
+<body>
+ 
+    <!-- sayfa üstü-->
+    <div class="arkaplan alt-kenar-10">
+        <div class="ust kapsayici">
+            <div class="logo">
+                <h1>En uygun tatil</h1>
+                <h2>www.tatilplanlama.com</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="ana.html">Ana Sayfa</a>
+                    <a href="index.html">Hesap açma</a>
+                    <a href="kultur.html">Kültürel</a>
+                    <a href="eglence.html">Eğlenceli</a>
+                    <a href="su.html">Su tatili</a>
+                   
+                    
+
+                    
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+  <header id="navbar">
+    
+    <div class="ikinci">
+        <ul>
+        <li><a href="azerbaycan.html"></a></li>
+        <li><a href="turkiye.html"></a></li>
+        <li><a href="ispanya.html"></a></li>
+        <li><a href="italya.html"></a></li>
+       <li><a href="endonezya.html"></a></li>
+       <li><a href="hindistan.html"></a></li>
+       <li><a href="amerika.html"></a></li>
+       <li><a href="yunanistan.html"></a></li>
+       <li><a href="gkore.html"></a></li>
+       <li><a href="china.html"></a></li>
+    </ul>
+
+    </div>
+</header>
+    <!-- sayfa ortası-->
+    <div class="ulke">
+        <div> <h3 > <a style="background-color: #25373D; color: #f4eeee;">ÜLKELER</a> </h3>
+        <ul id="ulkeler" >
+            <li><a href="azerbaycan.html">Azerbaycan</a></li>
+            <li><a href="amerika.html">Amerika</a></li>
+            <li><a href="china.html">Çin</a></li>
+            <li><a href="rusya.html">Rusya</a></li>
+            <li><a href="polonya.html">Polonya</a></li>
+            <li><a href="gkore.html">Güney Kore</a></li>
+            <li><a href="yunanistan.html">Yunanistan</a></li>
+            <li><a href="turkiye.html">Türkiye</a></li>
+            <li><a href="italya.html">İtalya</a></li>
+            <li><a href="hindistan.html">Hindistan</a></li>
+            <li><a href="endonezya.html">Endonezya</a></li>
+            <li><a href="ispanya.html">İspanya</a></li>
+        </ul></div>
+    </div>
+    <div class="orta kapsayici">
+        
+        <div class="bolum1">
+            <img src="istockphoto-155439315-612x612.jpg" alt="Kapak resmi">
+        </div>
+        <div class="bolum2">
+            <div class="kutu">
+                <img src="images.jpeg" alt="">
+                <h2><a href="anket.html">Hangi ülkede tatil yapmalısınız?</a></h2>
+                
+                <p>Her ülkenin kendine ait öne çıktıkları özellikerli var. Peki ya sizin için en uygun tatil yeri neresi?  </p>
+            </div>
+            <div class="kutu">
+                <img src="Unknown.jpeg" alt="">
+                <h2>Kültürel geziler</h2>
+                <p>En iyi kültürel gezi nereye ve ne zaman yapılmalıdır? </p>
+            </div>
+            <div class="kutu">
+                <img src="Unknown-1.jpeg" alt="">
+                <h2>Eğlence odaklı tatil</h2>
+                <p>Bütün tatiliniz boyunce 7/24 eğlenmek istiyorsanız nereye gitmelisiniz? </p>
+            </div>
+ 
+ 
+        </div>
+        
+        
+    </div>
+ 
+    <!-- sayfa altı-->
+    <div class="arkaplan">
+        <div class="alt kapsayici">
+            <div class="baglanti">
+                
+        </div>
+    </div>
+    
+</body>
+</html>

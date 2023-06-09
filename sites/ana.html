@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   
+    <title>Çok Gezen Mi Çok Okuyan Mı Bilir?</title>
+    <style>
+
+      body {
+          background-image: url(deniz.jpeg); 
+          background-repeat: no-repeat; /* resim tekrar etmesin*/
+          background-position: center; /* resmi ortalıyor */
+          background-size: cover; /* resim tüm ekranı kaplasın mı nop */
+      }
+
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .image-container {
+        text-align: center;
+        width: 100%;
+      }
+
+      .links-container {
+        display:flex; /*linklerin alt alta olmasını sağlıyor*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        font-size: xx-large;
+        padding: 25px;
+        margin-bottom: 100px;
+      }
+
+      .link {
+        min-width: 50% !important;
+        width: 100%;
+      }
+      
+      .container {
+          max-width:540px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 15px;
+        }
+
+      p {
+        color: white;
+        font-size:x-large;
+      }
+          #bir,
+          #iki,
+          #üç {
+             border: 6px solid#868686a6 ;
+             padding: 15px 100%;
+             width: 110px;
+             font-size: xx-large;
+             border-radius: 5px;
+             text-decoration: none;
+             color: #e308e7 ;
+             transition: background-color 0.9s ease;
+             box-shadow: 0 0 10px rgb(0, 0, 0);
+           }
+           
+          #bir:hover,
+          #iki:hover,
+          #üç:hover {
+             background-color: #400de8c6;
+             color: rgb(236, 237, 237);
+           }
+
+           /*header bölümü başlar*/
+          
+           header {
+            color: #fbfbfb;
+            padding: 20px;
+            text-align: center;
+            border: 5px solid hsla(286, 95%, 23%, 0.66);
+            text-align: center;
+            /* Gölgelik eklemek için */
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            border-radius: 8px;
+        }
+ 
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+           
+        }
+        .navbar a:hover {
+          background-color: #fcfdfd67;
+          color: rgb(236, 237, 237);
+          border-radius: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .navbar li:not(:last-child)::after {
+          content: " | ";
+          font-size: xx-large;
+          color: #868686;
+        }
+        .navbar a {
+            color: #07f3cc;
+            text-decoration: none;
+            font-size:xx-large;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+          <ul>
+              <li><a href="ana.html">Ana Sayfa</a></li>
+              <li><a href="hakkımızda.html">Hakkımızda</a></li>
+              <li><a href="kaynakça.html">Kaynakça</a></li>
+              <li><a href="iletişim.html">İletişim</a></li>
+          </ul>
+      </div>
+      <h1>Çok Gezen Mi Çok Okuyan Mı Bilir?</h1>
+      <p></p>
+  </header>
+
+  <!-- Genel Sayfa içeriği aşağıya.-->
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="okuyan.jpg"
+          alt="BookPerson"
+          max-width="100%"
+          height="150px"
+          width="290px"
+          style="border-radius: 40%" />
+        
+          <p>Kendinize katabileceğiniz <span><strong> Bilgiler </strong></span> burada.</p>
+          <!-- <p><strong>Çok Gezen Mi Çok Okuyan Mı Bilir?</strong></p> -->
+
+        <div class="links-container">
+          <a id="bir" href="okuyan-ana.html" ><strong>Okuyan</strong></a>
+          <a id="iki" href="gezen.html" ><strong>Gezen</strong></a>
+          <a id="üç" href="form.html" ><strong>Anket</strong></a>
+        
+      </div>
+    </div>
+    <!-- End footer -->
+    </footer>
+
+  </body>
+</html>
